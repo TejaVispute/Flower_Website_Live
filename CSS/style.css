@@ -86,6 +86,9 @@ header .fa-bars {
     section {
         padding: 2rem;
     }
+    .home {
+        background-position: left;
+    }
 }
 
 @media (max-width: 768px) {
@@ -119,11 +122,21 @@ header .fa-bars {
         display: block;
 
     }
+
+    .home .content h3 {
+        font-size: 5rem;
+    }
+    .home .content span {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+    .heading{
+        font-size:3rem ;
     }
 }
 
@@ -178,3 +191,48 @@ section {
     background-color: pink;
     color: #333;
 }
+
+/* section style ends here */
+
+
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin:2rem 0;
+    background:rgba(255,52,153,.05)
+}
+
+.heading span{
+    color:pink;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+
+.about .row .video-container video{
+    width: 100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
